@@ -28,7 +28,7 @@ namespace _0_print_array
                     Console.Write("{} ", tab[i]);
                 }
             }
-            
+            return (tab);
         }
     }
 }
