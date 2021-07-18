@@ -34,7 +34,7 @@ class  MyQueue
         aQueue.Enqueue(newItem);
         Console.WriteLine("Number of items: {0}", count);
         if (count > 0)
-            Console.WriteLine("Top item: {0}", first);
+            Console.WriteLine("First item: {0}", first);
         else
             Console.WriteLine("Queue is empty");
         Console.WriteLine("Queue contains \"{0}\": {1}", search, s);
