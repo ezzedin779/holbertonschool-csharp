@@ -9,7 +9,7 @@ class Dictionary
         string best = "None";
         foreach (var i in myList)
         {
-            if (i.Value > x)
+            if (i.Value >= x)
             {
                 x = i.Value;
                 best = i.Key;
