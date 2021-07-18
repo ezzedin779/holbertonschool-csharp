@@ -6,17 +6,22 @@ namespace _14_rectangular_array
     {
         static void Main(string[] args)
         {
-            int[,] array = new int[5, 5];
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
-                    array[i, j] = 0;
-            }
-            array[2, 2] = 1;
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                    Console.Write("{0} ", array[i, j]);
+                {
+                    if (i == 2 && j == 2)
+                    {
+                        Console.Write("1 ");
+                        continue;
+                    }
+                    if (j == 4)
+                    {
+                        Console.Write("0");
+                        continue;
+                    }
+                    Console.Write("0 ");
+                }
                 Console.WriteLine();
             }
         }
