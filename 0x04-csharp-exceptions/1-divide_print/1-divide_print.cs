@@ -1,5 +1,6 @@
 ﻿using System;
 
+
     class Int
     {
         public static void divide(int a, int b)
@@ -16,7 +17,7 @@
             }
             finally
             {
-                console.WriteLine("{0} / {1} = {2}", a, b, i);
+                Console.WriteLine("{0} / {1} = {2}", a, b, i);
             }
         }
     }
