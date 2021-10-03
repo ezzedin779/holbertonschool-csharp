@@ -10,10 +10,10 @@
                 i = a / b;
             }
             catch (DivideByZeroException)
-                {
-                    i = 0;
-                    Console.WriteLine("Cannot divide by zero");
-                }
+            {
+                i = 0;
+                Console.WriteLine("Cannot divide by zero");
+            }
             finally
             {
                 console.WriteLine("{0} / {1} = {2}", a, b, i);
