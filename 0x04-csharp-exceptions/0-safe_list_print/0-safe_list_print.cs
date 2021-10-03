@@ -9,10 +9,14 @@ using System.Collections.Generic;
             try
             {
                 for (i = 0; i < n; i++)
+                {
                     Console.WriteLine(myList[i]);
+                }
             }
             catch (ArgumentOutOfRangeException)
-                return (i);
+                {
+                    return (i);
+                }
             return (i);
         }
     }
