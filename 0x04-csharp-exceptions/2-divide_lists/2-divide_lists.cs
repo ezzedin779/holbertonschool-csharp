@@ -5,21 +5,21 @@ using System.Collections.Generic;
     {
         public static List<int> Divide(List<int> list1, List<int> list2, int listLength)
         {
-            List<int> new = new List<int>();
+            List<int> n = new List<int>();
 
             for (int i = 0; i < listLength; i++)
             {
                 try{
-                    new.Add(list1[i] / list2[i]);
+                    n.Add(list1[i] / list2[i]);
                 }
                 catch (DivideByZeroException){
                     Console.WriteLine("Cannot divide by zero");
-                    new.Add(0);
+                    n.Add(0);
                 }
                 catch (ArgumentOutOfRangeException){
                     Console.WriteLine("Out of range");
                 }
             }
-            return(new);
+            return(n);
         }
     }
