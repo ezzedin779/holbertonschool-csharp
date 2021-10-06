@@ -40,7 +40,7 @@ namespace Enemies
         }
         public override string ToString()
         {
-            return ("Zombie Name: " + name + "/ Total Health: " + health);
+            return ("Zombie Name: " + name + " / Total Health: " + health);
         }
     }
 }
