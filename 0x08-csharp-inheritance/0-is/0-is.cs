@@ -7,7 +7,8 @@ using System.Collections.Generic;
         /// <summary> Are u int ? </summary>
         public static bool IsOfTypeInt(object obj)
         {
-            if (obj is int){
+            if (obj is int)
+            {
                 return(true);
             }
             return (false);
