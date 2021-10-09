@@ -27,12 +27,12 @@
         /// init the width
         /// </summary>
         /// <value>the width if not less then 0</value>
-        public int width
+        public int Width
         {
             get {return width;}
             set {
                     if (value < 0)
-                    {    throw new ArgumentException("Width must be greater than or equal to 0");}
+                    {throw new ArgumentException("Width must be greater than or equal to 0");}
                     else
                     {width = value;}
                 }
@@ -42,7 +42,7 @@
         /// init the height
         /// </summary>
         /// <value>the height value if nothing goes wrong</value>
-        public int height
+        public int Height
         {
             get {return height;}
             set {
