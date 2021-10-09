@@ -5,7 +5,7 @@ using System.Reflection;
 /// the class obj 
 /// </summary>
 
-    class obj
+    class Obj
     {
         /// <summary>
         /// check who is this myobj
@@ -13,9 +13,9 @@ using System.Reflection;
         /// <param name="myObj">the object to check</param>
         public static void Print(object myObj)
         {
-            TypeInfo t = myobj.GetType().GetTypeInfo();
+            TypeInfo t = myObj.GetType().GetTypeInfo();
             IEnumerable<PropertyInfo> pro = t.GetProperties();
-            IEnumerable<MethoInfo> me = t.GetMethods();
+            IEnumerable<MethodInfo> me = t.GetMethods();
             Console.WriteLine(t.Name + " Properties:");
             foreach(PropertyInfo i in pro)
                 Console.WriteLine(i.Name);
