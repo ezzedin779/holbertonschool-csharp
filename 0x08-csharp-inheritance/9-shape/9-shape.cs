@@ -68,7 +68,7 @@
         /// <returns>new tostring</returns>
         public override string ToString()
         {
-            return ("[{0}] {1} / {2}", this.GetType(), this.width, this.height);
+            return string.Format("[{0}] {1} / {2}", this.GetType(), width, height);
         }
     }
 
