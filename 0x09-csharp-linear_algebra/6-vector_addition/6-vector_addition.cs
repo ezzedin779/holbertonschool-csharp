@@ -13,8 +13,9 @@
 		/// <returns>the addition</returns>
         public static double[] Add(double[] vector1, double[] vector2)
         {
+			double[] ok = {-1};
 			if (vector1.Length != vector2)
-				return (-1);
+				return (ok);
 			if (vector2 == 2)
 			{
 				double[] r1 = {vector1[0] + vector2[0], vector1[1] + vector2[1]};
@@ -26,6 +27,6 @@
 				return (r2);
 			}
 			else
-				return (-1);
+				return (ok);
 		}
     }
