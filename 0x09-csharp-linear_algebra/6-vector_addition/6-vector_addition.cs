@@ -17,13 +17,13 @@
 				return (-1);
 			if (vector2 == 2)
 			{
-				double[] result = {vector1[0] + vector2[0], vector1[1] + vector2[1]};
-				return (result);
+				double[] r1 = {vector1[0] + vector2[0], vector1[1] + vector2[1]};
+				return (r1);
 			}
 			if (vector2 == 3)
 			{
-				double[] result = {vector1[0] + vector2[0], vector1[1] + vector2[1], vector1[2] + vector2[2]};
-				return (result);
+				double[] r2 = {vector1[0] + vector2[0], vector1[1] + vector2[1], vector1[2] + vector2[2]};
+				return (r2);
 			}
 			else
 				return (-1);
