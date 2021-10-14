@@ -14,7 +14,7 @@
         public static double[] Add(double[] vector1, double[] vector2)
         {
 			double[] ok = {-1};
-			if (vector1.Length != vector2)
+			if (vector1.Length != vector2.Length)
 				return (ok);
 			if (vector2 == 2)
 			{
