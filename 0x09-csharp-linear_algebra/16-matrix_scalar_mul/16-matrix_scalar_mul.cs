@@ -15,7 +15,7 @@
         {
 			int len0 = matrix.GetLength(0);
 			int len1 = matrix.GetLength(1);
-			if (len != len1 || len > 3 || len < 2)
+			if (len0 != len1 || len0 > 3 || len0 < 2)
 				return (new double[,] {{-1}});
 			double[,] r = new double [len0, len1];
 			for (int i = 0; i < len0; i++)
