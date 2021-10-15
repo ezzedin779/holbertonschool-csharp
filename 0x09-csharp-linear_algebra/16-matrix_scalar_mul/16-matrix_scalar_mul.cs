@@ -5,7 +5,12 @@
 	/// </summary>
     class MatrixMath
     {
-		
+		/// <summary>
+		/// scalar * matrix
+		/// </summary>
+		/// <param name="matrix">the matrix to</param>
+		/// <param name="scalar">the scalar of</param>
+		/// <returns>the multiply</returns>
         public static double[,] MultiplyScalar(double[,] matrix, double scalar)
         {
 			int len0 = matrix.GetLength(0);
