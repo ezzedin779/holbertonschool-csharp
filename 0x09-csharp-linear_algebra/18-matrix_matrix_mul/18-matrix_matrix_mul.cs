@@ -14,7 +14,7 @@
 			double[,] r = new double [len, len];
 			for (int i = 0; i < len; i++)
 				for (int j = 0; j < len; j++)
-					r[i,j] = matrix1[i,j] + matrix2[i,j];
+					r[i,j] = matrix1[i,j] * matrix2[i,j];
 			return (r);
     	}
 	}
