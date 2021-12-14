@@ -11,16 +11,16 @@ class Queue<T>
 	/// <summary> dequeue </summary>
 	public void Dequeue()
 	{
-		if (head == null)
+		if (head != null)
 		{
-			Console.WriteLine("Queue is empty");
-			return(default(T));
+			Node de = new Node(default(T));
+			de = head;
+			head = head.next;
+			count--;
+			return de.value;
 		}
-		Node de = new Node(default(T));
-		de = head;
-		head = head.next;
-		count--;
-		return de.value;
+		Console.WriteLine("Queue is empty");
+		return(default(T));
 	}
 	/// <summary>
 	/// the class method
