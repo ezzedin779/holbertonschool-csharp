@@ -8,6 +8,20 @@ class Queue<T>
 	Node head {get; set;}
 	Node tail {get; set;}
 	int count {get; set;}
+	/// <summary> dequeue </summary>
+	public T Dequeue()
+	{
+		if (head == null)
+		{
+			Console.WriteLine("Queue is empty");
+			return(default(T));
+		}
+		Node de = new Node(default(T));
+		de = head;
+		head = head.next;
+		count--;
+		return de.value;
+	}
 	/// <summary>
 	/// the class method
 	/// </summary>
@@ -29,20 +43,6 @@ class Queue<T>
 			tail = newT;
 		}
 		count++;
-	}
-	/// <summary> dequeue </summary>
-	public void Dequeue()
-	{
-		if (null != head)
-		{
-			Node de = new Node(default(T));
-			de = head;
-			head = head.next;
-			count--;
-			return de.value;
-		}
-		Console.WriteLine("Queue is empty");
-		return(default(T));
 	}
 	/// <summary> counter </summary>
 	public int Count(){
