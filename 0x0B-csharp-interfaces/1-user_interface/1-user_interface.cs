@@ -64,15 +64,33 @@
 	/// </summary>
 	public class TestObject : Base, IInteractive, IBreakable, ICollectable
 	{
+		/// <summary>
+		/// durability ?
+		/// </summary>
 		public int durability {get; set;}
+		/// <summary>
+		/// is collected ?
+		/// </summary>
 		public bool isCollected {get; set;}
+		/// <summary>
+		/// name
+		/// </summary>
 		public string name {get; set;}
+		/// <summary>
+		/// the interact
+		/// </summary>
 		public void Interact(){
 
 		}
+		/// <summary>
+		/// the Break
+		/// </summary>
 		public void Break(){
 
 		}
+		/// <summary>
+		/// the collect
+		/// </summary>
 		public void Collect(){
 
 		}
