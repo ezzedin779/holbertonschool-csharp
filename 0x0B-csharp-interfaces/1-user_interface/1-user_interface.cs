@@ -8,7 +8,7 @@
 		/// <summary>
 		/// public property
 		/// </summary>
-        public string name {get; set;}
+        private string name {get; set;}
 		/// <summary>
 		/// override the string
 		/// </summary>
@@ -75,7 +75,7 @@
 		/// <summary>
 		/// name
 		/// </summary>
-		//public string name {get; set;}
+		public string name {get; set;}
 		/// <summary>
 		/// the interact
 		/// </summary>
