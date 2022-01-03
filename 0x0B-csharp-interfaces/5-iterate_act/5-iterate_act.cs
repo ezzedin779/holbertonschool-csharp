@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 	/// <summary>
 	/// Base class
@@ -191,7 +192,7 @@
 					try
 					{
 						IBreakable newObj = (IBreakable)obj;
-						newObj.Interact();
+						newObj.Break();
 					}
 					catch {}
 				}
@@ -200,7 +201,7 @@
 					try
 					{
 						ICollectable newObj = (ICollectable)obj;
-						newObj.Interact();
+						newObj.Collect();
 					}
 					catch {}
 				}
