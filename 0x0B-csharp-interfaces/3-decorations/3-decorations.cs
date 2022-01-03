@@ -95,7 +95,7 @@
 		/// <summary>
 		/// Set the parameters
 		/// </summary>
-		public Decoration(string name= "Decoration", int durability= 1, bool isQuestItem= fale)
+		public Decoration(string name= "Decoration", int durability= 1, bool isQuestItem= false)
 		{
 			if (durability <= 0)
 				throw new System.ArgumentException("Durability must be greater than 0");
