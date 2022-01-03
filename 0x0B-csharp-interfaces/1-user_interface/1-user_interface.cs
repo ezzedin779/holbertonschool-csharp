@@ -80,18 +80,18 @@
 		/// the interact
 		/// </summary>
 		public void Interact(){
-
+			// Implement
 		}
 		/// <summary>
 		/// the Break
 		/// </summary>
 		public void Break(){
-
+			// Implement
 		}
 		/// <summary>
 		/// the collect
 		/// </summary>
 		public void Collect(){
-
+			// Implement
 		}
 	}
