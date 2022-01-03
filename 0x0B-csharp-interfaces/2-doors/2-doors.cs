@@ -73,8 +73,8 @@
 		/// <summary>
 		/// The interaction with the door
 		/// </summary>
-		public Interact()
+		public void Interact()
 		{
-			Console.WriteLine($"You try to open the {this.name}. It's locked");
+			Console.WriteLine($"You try to open the {this.name}. It's locked.");
 		}
 	}
