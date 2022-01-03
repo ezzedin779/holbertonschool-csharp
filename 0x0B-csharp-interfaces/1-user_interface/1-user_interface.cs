@@ -21,7 +21,7 @@
 	/// <summary>
 	/// Interactive interface
 	/// </summary>
-	interface IInteractive
+	public interface IInteractive
 	{
 		/// <summary>
 		/// The interact method
@@ -32,7 +32,7 @@
 	/// <summary>
 	/// Breakable interface
 	/// </summary>
-	interface IBreakable
+	public interface IBreakable
 	{
 		/// <summary>
 		/// the durability to break
@@ -47,7 +47,7 @@
 	/// <summary>
 	/// Collectable interface
 	/// </summary>
-	interface ICollectable
+	public interface ICollectable
 	{
 		/// <summary>
 		/// is it collected ?
