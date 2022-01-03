@@ -152,9 +152,9 @@
 		/// </summary>
 		public void Collect()
 		{
-			if (isCollected == False)
+			if (this.isCollected == False)
 			{
-				isCollected = true;
+				this.isCollected = true;
 				Console.WriteLine("You pick up the {0}.", this.name);
 			}
 			else
