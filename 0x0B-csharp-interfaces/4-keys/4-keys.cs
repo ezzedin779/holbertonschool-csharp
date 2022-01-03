@@ -155,7 +155,7 @@
 		/// </summary>
 		public void Collect()
 		{
-			if (this.isCollected == False)
+			if (this.isCollected == false)
 			{
 				this.isCollected = true;
 				Console.WriteLine("You pick up the {0}.", this.name);
