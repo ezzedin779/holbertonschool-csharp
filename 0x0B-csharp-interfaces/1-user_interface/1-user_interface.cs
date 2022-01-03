@@ -75,7 +75,7 @@
 		/// <summary>
 		/// name
 		/// </summary>
-		public string name {get; set;}
+		//public string name {get; set;}
 		/// <summary>
 		/// the interact
 		/// </summary>
