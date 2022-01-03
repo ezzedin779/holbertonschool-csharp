@@ -85,9 +85,9 @@
 	public class Decoration : Base, IInteractive, IBreakable
 	{
 		/// <summary>
-		/// isQuestItem are u usefull ?
+		/// isQuestobj are u usefull ?
 		/// </summary>
-		public bool isQuestItem {get; set;}
+		public bool isQuestobj {get; set;}
 		/// <summary>
 		/// How durable
 		/// </summary>
@@ -95,13 +95,13 @@
 		/// <summary>
 		/// Set the parameters
 		/// </summary>
-		public Decoration(string name= "Decoration", int durability= 1, bool isQuestItem= false)
+		public Decoration(string name= "Decoration", int durability= 1, bool isQuestobj= false)
 		{
 			if (durability <= 0)
 				throw new System.ArgumentException("Durability must be greater than 0");
 			this.name = name;
 			this.durability = durability;
-			this.isQuestItem = isQuestItem;
+			this.isQuestobj = isQuestobj;
 		}
 		/// <summary>
 		/// the interact ?
@@ -112,7 +112,7 @@
 				Console.WriteLine("The {0} has been broken.", this.name);
 			else
 			{
-				if (this.isQuestItem)
+				if (this.isQuestobj)
 					Console.WriteLine("You look at the {0}. There's a key inside.", this.name);
 				else
 					Console.WriteLine("You look at the {0}. Not much to see here.", this.name);
@@ -165,18 +165,24 @@
 		}
 	}
 
+	/// <summary>
+	/// The Room Obect Class
+	/// </summary>
 	public class RoomObjects
 	{
+		/// <summary>
+		/// The Iteration to do
+		/// </summary>
 		public static void IterateAction(List<Base> roomObjects, Type type)
 		{
-			foreach(var item in roomObjects)
+			foreach(var obj in roomObjects)
 			{
 				if (typeof(IInteractive).IsAssignableFrom(type))
 				{
 					try
 					{
-						IInteractive changedObj = (IInteractive)item;
-						changedObj.Interact();
+						IInteractive newObj = (IInteractive)obj;
+						newObj.Interact();
 					}
 					catch {}
 				}
@@ -184,8 +190,8 @@
 				{
 					try
 					{
-						IBreakable changedObj = (IBreakable)item;
-						changedObj.Interact();
+						IBreakable newObj = (IBreakable)obj;
+						newObj.Interact();
 					}
 					catch {}
 				}
@@ -193,8 +199,8 @@
 				{
 					try
 					{
-						ICollectable changedObj = (ICollectable)item;
-						changedObj.Interact();
+						ICollectable newObj = (ICollectable)obj;
+						newObj.Interact();
 					}
 					catch {}
 				}
