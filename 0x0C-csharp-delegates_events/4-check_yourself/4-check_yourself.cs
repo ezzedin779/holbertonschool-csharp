@@ -32,15 +32,15 @@ class Player
 	}
 
 
-	private void CheckStatus(object go, CurrentHPArgs chp)
+	private void CheckStatus(object sender, CurrentHPArgs e)
 	{
-		if (chp.currentHP == maxHp)
+		if (e.currentHP == maxHp)
 			status = $"{name} is in perfect health!";
-		else if (chp.currentHP >= maxHp / 2 && chp.currentHP < maxHp)
+		else if (e.currentHP >= maxHp / 2 && e.currentHP < maxHp)
 			status = $"{name} is doing well";
-		else if (chp.currentHP >= maxHp / 4 && chp.currentHP < maxHp / 2)
+		else if (e.currentHP >= maxHp / 4 && e.currentHP < maxHp / 2)
 			status = $"{name} isn't doing too great...";
-		else if (chp.currentHP > 0 && chp.currentHP < maxHp / 2)
+		else if (e.currentHP > 0 && e.currentHP < maxHp / 2)
 			status = $"{name} needs help!";
 		else
 			status = $"{name} is knocked out!";
