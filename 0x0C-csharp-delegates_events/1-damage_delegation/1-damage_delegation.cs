@@ -38,7 +38,7 @@ class Player
 	public void TakeDamage(float damage)
 	{
 		if (damage < 0)
-			damage = 0;
+		{	damage = 0;}
 		Console.WriteLine("{} takes {} damage!", this.name, damage);
 		hp -= damage;
 	}
@@ -50,7 +50,7 @@ class Player
 	public void HealDamage(float heal)
 	{
 		if (heal < 0)
-			heal = 0;
+		{	heal = 0;}
 		Console.WriteLine("{} heals {} HP!", this.name, heal);
 		hp += heal;
 	}
