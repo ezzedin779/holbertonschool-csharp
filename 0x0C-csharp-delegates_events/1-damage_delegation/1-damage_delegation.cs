@@ -58,5 +58,5 @@ class Player
 	/// <summary>
 	/// a delegate that calculates the health
 	/// </summary>
-	public delegate void CalculateHealth (float damage);
+	public delegate void CalculateHealth(float damage);
 }
