@@ -175,27 +175,27 @@ using System.Collections.Generic;
 		/// <summary>
 		/// get the list ?
 		/// </summary>
-		public Objects()
+		public Objs()
 		{
 			Ls = new List<T>();
 		}
 		/// <summary>
 		/// adding items ?
 		/// </summary>
-		public void More(T i)
+		public void Add(T i)
 		{
 			Ls.Add(i);
 		}
 		/// <summary>
 		/// get enumerator
 		/// </summary>
-		public IEnumerator<T> EnumeratorGet()
+		public IEnumerator<T> GetEnumerator()
 		{
 			return Ls.GetEnumerator();
 		}
 
 		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
 		{
-			return EnumeratorGet();
+			return GetEnumerator();
 		}
 	}
