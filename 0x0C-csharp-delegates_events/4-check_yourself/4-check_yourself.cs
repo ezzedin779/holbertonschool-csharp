@@ -38,13 +38,13 @@ class Player
 	/// <param name="e"> what happened ?</param>
 	private void CheckStatus(object sender, CurrentHPArgs e)
 	{
-		if (e.currentHP == maxHp)
+		if (e.currentHp == maxHp)
 			status = $"{name} is in perfect health!";
-		else if (e.currentHP >= maxHp / 2 && e.currentHP < maxHp)
+		else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
 			status = $"{name} is doing well!";
-		else if (e.currentHP >= maxHp / 4 && e.currentHP < maxHp / 2)
+		else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
 			status = $"{name} isn't doing too great...";
-		else if (e.currentHP > 0 && e.currentHP < maxHp / 2)
+		else if (e.currentHp > 0 && e.currentHp < maxHp / 2)
 			status = $"{name} needs help!";
 		else
 			status = $"{name} is knocked out!";
