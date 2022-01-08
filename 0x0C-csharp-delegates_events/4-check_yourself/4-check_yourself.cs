@@ -150,7 +150,7 @@ class CurrentHPArgs: EventArgs
 	/// <summary>
 	/// the currentHP of the player
 	/// </summary>
-	public float currentHP {get; set;}
+	public readonly float currentHP;
 	/// <summary>
 	/// the constructor
 	/// </summary>
