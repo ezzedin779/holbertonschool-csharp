@@ -28,7 +28,7 @@ class Player
 		this.name = name;
 		this.hp = this.maxHp;
 		status = $"{name} is ready to go!";
-		HPCheck += Checkstatus();
+		HPCheck += CheckStatus;
 	}
 
 
