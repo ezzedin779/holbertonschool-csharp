@@ -31,11 +31,11 @@ class Player
 		HPCheck += CheckStatus;
 	}
 
-	private void OnCheckStatus(object sender, CurrentHPArgs e)
+	private void OnCheckStatus(CurrentHPArgs e)
 	{
 		if (e.currentHp < maxHp / 4)
 			HPCheck += HPValueWarning;
-		HPCheck.Invoke(this, currentHp);
+		HPCheck.Invoke(this, e);
 		HPCheck -= HPValueWarning;
 	}
 
