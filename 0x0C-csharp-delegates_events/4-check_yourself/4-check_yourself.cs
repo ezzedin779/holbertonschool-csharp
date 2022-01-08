@@ -31,7 +31,11 @@ class Player
 		HPCheck += CheckStatus;
 	}
 
-
+	/// <summary>
+	/// the event to handle ?
+	/// </summary>
+	/// <param name="sender"> sender </param>
+	/// <param name="e"> what happened ?</param>
 	private void CheckStatus(object sender, CurrentHPArgs e)
 	{
 		if (e.currentHP == maxHp)
