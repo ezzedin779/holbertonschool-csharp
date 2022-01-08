@@ -37,7 +37,7 @@ class Player
 		if (e.currentHP == maxHp)
 			status = $"{name} is in perfect health!";
 		else if (e.currentHP >= maxHp / 2 && e.currentHP < maxHp)
-			status = $"{name} is doing well";
+			status = $"{name} is doing well!";
 		else if (e.currentHP >= maxHp / 4 && e.currentHP < maxHp / 2)
 			status = $"{name} isn't doing too great...";
 		else if (e.currentHP > 0 && e.currentHP < maxHp / 2)
