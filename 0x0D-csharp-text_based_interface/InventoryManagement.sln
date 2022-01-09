@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryLibrary", "InventoryLibrary\InventoryLibrary.csproj", "{500E65A1-9DEC-45E2-8240-0928ED013F4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{500E65A1-9DEC-45E2-8240-0928ED013F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500E65A1-9DEC-45E2-8240-0928ED013F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500E65A1-9DEC-45E2-8240-0928ED013F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500E65A1-9DEC-45E2-8240-0928ED013F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85666D6D-3BCB-4B52-8E67-E7A0AEA6FA6D}
+	EndGlobalSection
+EndGlobal
