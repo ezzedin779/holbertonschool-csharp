@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Program
+public class BaseClass
 {
 	public string id {get; set;}
 	public DateTime date_created {get; set;}
